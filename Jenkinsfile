@@ -14,7 +14,7 @@ pipeline {
                 script {
                     echo 'Running the Docker container...'
                     sh '''
-                        docker run -d --name my-nginx -p 8080:80 nginx:latest
+                        docker run -d --name my-nginx -p 8090:80 nginx:latest
                     '''
                 }
             }
