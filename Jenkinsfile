@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'git --version'
+                sh '''git --version
+                docker --version'''
             }
         }
     }
